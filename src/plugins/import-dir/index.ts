@@ -12,7 +12,7 @@ export default function importDirPlugin (): Plugin {
     configResolved (config) {
       resolvedConfig = config
     },
-    async resolveId (source: string, importer: string | undefined, options): Promise<ResolveIdResult> {
+    async resolveId (source: string, importer: string | undefined): Promise<ResolveIdResult> {
       const [id, query] = source.split('?')
       const buildId = async (n: string) => {
         this.warn(n)
