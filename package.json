@@ -1,6 +1,6 @@
 {
   "name": "@laoshiguobaorou/vite-lib",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "scripts": {
     "build": "tsc && cp src/plugins/image/client.d.ts dist/image"
   },
